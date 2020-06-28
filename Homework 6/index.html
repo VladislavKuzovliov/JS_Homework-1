@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header_body">
+           <a class="header_logo" href="#">
+               <img src="images/logo.png" alt="">
+           </a>
+            <div class="header_user">
+                <div class="header_city">
+                    <a href="#">New York</a>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="header_icons">
+                    <i class="fa fa-bell"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <a class="header_username" href="#">
+                    <span>User name</span>
+                    <img src="images/userPhoto.jpg" alt="">
+                </a>
+                <div class="header_search"  >
+                    <form class="header_input-item">
+                        <input type="text" class="input_text" placeholder="Search ..." onblur="slideHeadSearch2()">
+                    </form>
+                    <i class="fa fa-search" onclick="slideHeadSearch()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-m_body">
+            <div class="header-m_column">
+                <i class="fas fa-bars fa-3x" onclick="menuSlide()"></i>
+                <img src="images/logo-white.png" alt="">
+            </div>
+            <div class="header-m_column">
+                <span>Page title</span>
+            </div>
+            <div class="header-m_column">
+                <img src="images/userPhotoBig.jpg" alt="">
+                <i class="fas fa-search" onclick="show()"></i>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <nav class="nav_body">
+            <a href="#" class="nav_column">Menu item</a>
+            <a href="#" class="nav_column">Menu item</a>
+            <a href="#" class="nav_column">Menu item</a>
+            <a href="#" class="nav_column">Menu item</a>
+            <a href="#" class="nav_column">Menu item</a>
+        </nav>
+    </div>
+    <div class="nav-m display_none disappearing">
+
+            <a href="#" class="nav-m_column">Menu item</a>
+            <a href="#" class="nav-m_column">Menu item</a>
+            <a href="#" class="nav-m_column">Menu item</a>
+            <a href="#" class="nav-m_column">Menu item</a>
+            <a href="#" class="nav-m_column">Menu item</a>
+
+    </div>
+    <div class="content">
+        <div class="content_body">
+            <menu class="content_menu">
+                <li class="content_submenu-item"><a href="#">Submenu item 7d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 5d</a></li>
+                <li class="content_submenu">Submenu</li>
+                <li class="content_submenu-item"><a href="#">Submenu item 7d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 2d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 4d</a></li>
+                <li class="content_submenu-item"><a href="#">More tags</a></li>
+                <li class="content_submenu">Submenu</li>
+                <li class="content_submenu-item"><a href="#">Submenu item 1d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 1d</a></li>
+                <li class="content_submenu">Submenu</li>
+                <li class="content_submenu-item"><a href="#">Submenu item 4d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 2d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 1 & Submenu item 2 2d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 7d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 1d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 1d</a></li>
+                <li class="content_submenu">Submenu</li>
+                <li class="content_submenu-item"><a href="#">Submenu item 2d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 1d</a></li>
+                <li class="content_submenu-item"><a href="#">Submenu item 3d</a></li>
+            </menu>
+            <div class="content_main">
+                <div class="content_title">
+                    <span>Page title in</span>
+                    <span>New York </span>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="content_search">
+                    <div class="content_search-form" >
+                        <form>
+                            <input type="text" placeholder="Search ..." onfocus="stretchingSearch()" onblur="unstretchingSearch()">
+                        </form>
+                    </div>
+                    <div class="content_search-buttons">
+                        <div ></div>
+                        <div ></div>
+                        <span>+ New item</span>
+                        <i class="fas fa-sliders-h"></i>
+
+                    </div>
+                </div>
+                <div class="content-m_search">
+                    <div class="content-m_search-form" >
+                        <i class="fas fa-search" onclick="show()"></i>
+                        <form class="content-m_search-form-item">
+                            <input type="text"  placeholder="Search ..." >
+                        </form>
+                    </div>
+                    <div class="content-m_search-buttons">
+
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                </div>
+
+                <div class="content_comments">
+                    <div class="content_post">
+                        <div class="post_img">
+                            <img src="images/photo1.jpg" alt="">
+                        </div>
+                        <div class="post_main">
+                            <div class="post_userheader">
+                                <div class="post_userinfo">
+                                    <div class="post_username">User name</div>
+                                    <div class="post_level">Pro</div>
+                                </div>
+                                    <div class="post_time">
+                                        <span>
+                                            <i class="fa fa-comments"></i>
+                                            <span>2</span>
+                                        </span>
+                                        <span>
+                                            <i class="far fa-clock"></i>
+                                            <span>20m</span>
+                                        </span>
+                                    </div>
+                            </div>
+                            <div class="post_title">Item title 1</div>
+                            <div class="post_text">
+                                Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                            </div>
+                            <div class="post_tags">
+                                <i class="fa fa-tag"></i>
+                                <span>tag1, tag2, tag3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_post">
+                        <div class="post_img">
+                            <img src="images/photo2.jpg" alt="">
+                        </div>
+                        <div class="post_main">
+                            <div class="post_userheader">
+                                <div class="post_userinfo">
+                                    <div class="post_username">User name</div>
+                                    <div class="post_level">Member</div>
+                                </div>
+                                <div class="post_time">
+                                        <span>
+                                            <i class="fa fa-comments"></i>
+                                            <span>2</span>
+                                        </span>
+                                    <span>
+                                            <i class="far fa-clock"></i>
+                                            <span>20m</span>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="post_title">Item title 2</div>
+                            <div class="post_text">
+                                Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                            </div>
+                            <div class="post_tags">
+                                <i class="fa fa-tag"></i>
+                                <span>tag1, tag2, tag3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_post">
+                        <div class="post_img">
+                            <img src="images/photo3.jpg" alt="">
+                        </div>
+                        <div class="post_main">
+                            <div class="post_userheader">
+                                <div class="post_userinfo">
+                                    <div class="post_username">User name</div>
+                                    <div class="post_level">Member</div>
+                                </div>
+                                <div class="post_time">
+                                        <span>
+                                            <i class="fa fa-comments"></i>
+                                            <span>2</span>
+                                        </span>
+                                    <span>
+                                            <i class="far fa-clock"></i>
+                                            <span>20m</span>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="post_title">Item title 3</div>
+                            <div class="post_text">
+                                Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                            </div>
+                            <div class="post_tags">
+                                <i class="fa fa-tag"></i>
+                                <span>tag1, tag2, tag3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_post">
+                        <div class="post_img">
+                            <img src="images/photo4.jpg" alt="">
+                        </div>
+                        <div class="post_main">
+                            <div class="post_userheader">
+                                <div class="post_userinfo">
+                                    <div class="post_username">User name</div>
+                                    <div class="post_level">Member</div>
+                                </div>
+                                <div class="post_time">
+                                        <span>
+                                            <i class="fa fa-comments"></i>
+                                            <span>2</span>
+                                        </span>
+                                    <span>
+                                            <i class="far fa-clock"></i>
+                                            <span>20m</span>
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="post_title">Item title 4</div>
+                            <div class="post_text">
+                                Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                            </div>
+                            <div class="post_tags">
+                                <i class="fa fa-tag"></i>
+                                <span>tag1, tag2, tag3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_buttons">
+                    <a href="#">
+                        <i class="fa fa-angle-left"></i>
+                        <span>Previous</span>
+                    </a>
+                    <a href="#">
+                        <span>Next</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_body">
+            <div class="footer_row">
+                <a href="#">About</a>
+                <a href="#">Policies</a>
+                <a href="#">Site map</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+        <div class="footer_border"></div>
+        <div class="footer_body">
+            <div class="footer_row">
+                <img src="images/logo-min.png" alt="">
+                <span>© 2015. Qulix Systems. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="scripts/main.js"></script>
+</html>
